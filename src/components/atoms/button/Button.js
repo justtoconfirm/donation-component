@@ -4,11 +4,12 @@ const Button = props => {
 
 	const {
 		type = 'button',
-		children
+		children,
+		onClick
 	} = props
 
 	return (
-		<button {...{ type }}>{ children }</button>
+		<button {...{ type, onClick }}>{ children }</button>
 	)
 }
 
