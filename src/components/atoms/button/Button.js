@@ -7,7 +7,7 @@ const Button = props => {
 	} = props
 
 	return (
-		<button>Button</button>
+		<button {...{ type }}>Button</button>
 	)
 }
 
