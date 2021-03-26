@@ -19,6 +19,12 @@ $ cd donation-component
 $ npm install
 ```
 
+Recommend to install `gatsby-cli` globally to allow gatsby commands to be executed.
+
+```
+$ npm install gatsby-cli -g
+```
+
 ## Run Local Server
 
 Gatsby provides a local server to run the application during development. A script has been added the `package.json` file to build the application during development and run the application on localhost.
