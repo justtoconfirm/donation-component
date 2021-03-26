@@ -1,6 +1,6 @@
 # Donation Component
 
-A resuable Donation Component built in React and using the Gatsby framework.
+A reusable Donation Component built in React and using the Gatsby framework.
 
 ## Install
 
