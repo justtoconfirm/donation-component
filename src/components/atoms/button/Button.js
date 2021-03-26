@@ -3,11 +3,12 @@ import React from 'react'
 const Button = props => {
 
 	const {
-		type = 'button'
+		type = 'button',
+		children
 	} = props
 
 	return (
-		<button {...{ type }}>Button</button>
+		<button {...{ type }}>{ children }</button>
 	)
 }
 
