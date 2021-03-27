@@ -7,9 +7,6 @@ import Image from '../../atoms/image/Image'
 
 const Donation = () => {
 
-	//const [ toggleState, setToggleState ] = useState(1)
-	//const [ donationAmount, setDonationAmount ] = useState(0)
-
 	const [ toggleState, setToggleState ] = useState(() => {
 		return 1
 	})
