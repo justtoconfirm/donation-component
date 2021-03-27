@@ -11,7 +11,8 @@ const Hyperlink = props => {
 		theme = '',
 		target,
 		rel,
-		children
+		children,
+		onClick
 	} = props
 
 	const hyperlinkClass = classNames('a-link', className, {
@@ -38,7 +39,8 @@ Hyperlink.propTypes = {
 	theme: PropTypes.string,
 	target: PropTypes.string,
 	rel: PropTypes.string,
-	children: PropTypes.string
+	children: PropTypes.string,
+	onClick: PropTypes.func
 }
 
 export default Hyperlink
