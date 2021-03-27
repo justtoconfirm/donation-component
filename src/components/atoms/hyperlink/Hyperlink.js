@@ -23,10 +23,10 @@ const Hyperlink = props => {
 	const isExternalLink = href && (href.includes('http') || href.startsWith('mailto'))
 
 	const renderExternalLink = () =>
-		<a href={ href } {...{ target, rel }} className={ hyperlinkClass }>{ children }</a>
+		<a href={ href } {...{ target, rel, onClick }} className={ hyperlinkClass }>{ children }</a>
 
 	const renderInternalLink = () =>
-		<Link to={ href } {...{ target, rel }} className={ hyperlinkClass }>{ children }</Link>
+		<Link to={ href } {...{ target, rel, onClick }} className={ hyperlinkClass }>{ children }</Link>
 	
 	return (
 		isExternalLink ? renderExternalLink() : renderInternalLink()
