@@ -30,7 +30,7 @@ const Donation = () => {
 				<Button onClick={() => setDonation(40)}>£40</Button>
 				<Button onClick={() => setDonation(75)}>£75</Button>
 				<Button onClick={() => setDonation(100)}>£100</Button>
-				<Input onChange={event => setDonation(event.target.value)}/>
+				<Input onChange={event => setDonation(event.target.value)} />
 				<Button>Donate £{donationAmount} monthly</Button>
 			</div>
 
@@ -40,7 +40,7 @@ const Donation = () => {
 				<Button onClick={() => setDonation(40)}>£40</Button>
 				<Button onClick={() => setDonation(75)}>£75</Button>
 				<Button onClick={() => setDonation(100)}>£100</Button>
-				<Input />
+				<Input onChange={event => setDonation(event.target.value)} />
 				<Button>Donate £{donationAmount} today</Button>
 			</div>
 
@@ -50,6 +50,8 @@ const Donation = () => {
 
 			<div className='container-footer'>
 				<Hyperlink>Link</Hyperlink>
+
+				<span>All Direct Debits are protected by the Direct Debit Guarantee.</span>
 
 				<Image src='image1.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
 			</div>
