@@ -6,12 +6,20 @@ const Button = props => {
 	const {
 		type = 'button',
 		className = '',
+		theme = '',
+		hasDropShadow = false,
 		children,
 		onClick
 	} = props
 
+	const buttonClass = classNames('a-btn', className, {
+		'a-btn--primary' : theme === 'primary',
+		'a-btn--secondary' : theme === 'secondary',
+		'a-btn--shadow' : hasDropShadow
+	})
+
 	return (
-		<button {...{ type, className, onClick }}>{ children }</button>
+		<button {...{ type, onClick }} className={ buttonClass }>{ children }</button>
 	)
 }
 
