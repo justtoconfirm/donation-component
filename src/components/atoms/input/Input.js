@@ -20,7 +20,7 @@ const Input = props => {
 	} = props
 	
 	return (
-		<input {...{ type, className, id, name, value, size, maxLength, min, max, placeholder, readOnly, disabled }} />
+		<input {...{ type, onChange, className, id, name, value, size, maxLength, min, max, placeholder, readOnly, disabled }} />
 	)
 }
 
