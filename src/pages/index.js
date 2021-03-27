@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/atoms/button/Button'
 import Hyperlink from '../components/atoms/hyperlink/Hyperlink'
 import Image from '../components/atoms/image/Image'
+import Input from '../components/atoms/input/Input'
 import Donation from '../components/molecules/donation/Donation'
 
 const Home = () => (
@@ -10,6 +11,8 @@ const Home = () => (
 		<p>This is a test of the homepage.</p>
 
 		<Image />
+
+		<Input />
 
 		<Button className='test-btn'>£6</Button>
 		<Button>£12</Button>
