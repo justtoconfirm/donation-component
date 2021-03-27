@@ -8,9 +8,14 @@ import Image from '../../atoms/image/Image'
 const Donation = () => {
 
 	const [ toggleState, setToggleState ] = useState(1)
+	const [ donationAmount, setDonationAmount ] = useState(0)
 
 	const toggleTab = (index) => {
 		setToggleState(index)
+	}
+
+	const setDonation = (amount) => {
+		setDonationAmount(amount)
 	} 
 	
 	return (
@@ -21,26 +26,26 @@ const Donation = () => {
 			</div>
 			<div className={toggleState === 1 ? "content active-content" : "content"}>
 				<p>I would like to make a monthly donation of</p>
-				<Button>£10</Button>
-				<Button>£40</Button>
-				<Button>£75</Button>
-				<Button>£100</Button>
+				<Button onClick={() => setDonation(10)}>£10</Button>
+				<Button onClick={() => setDonation(40)}>£40</Button>
+				<Button onClick={() => setDonation(75)}>£75</Button>
+				<Button onClick={() => setDonation(100)}>£100</Button>
 				<Input />
-				<Button>Donate £0 today</Button>
+				<Button>Donate £{donationAmount} monthly</Button>
 			</div>
 
 			<div className={toggleState === 2 ? "content active-content" : "content"}>
 				<p>I would like to make a one-off donation of</p>
-				<Button>£10</Button>
-				<Button>£40</Button>
-				<Button>£75</Button>
-				<Button>£100</Button>
+				<Button onClick={() => setDonation(10)}>£10</Button>
+				<Button onClick={() => setDonation(40)}>£40</Button>
+				<Button onClick={() => setDonation(75)}>£75</Button>
+				<Button onClick={() => setDonation(100)}>£100</Button>
 				<Input />
-				<Button>Donate £0 today</Button>
+				<Button>Donate £{donationAmount} today</Button>
 			</div>
 
 			<div className='container-content'>
-				<Message>£0 Could help answer an emergency call to our Animal Rescue Line</Message>
+				<Message>£{donationAmount} Could help answer an emergency call to our Animal Rescue Line</Message>
 			</div>
 
 			<div className='container-footer'>
