@@ -45,11 +45,11 @@ const Donation = () => {
 			</div>
 
 			<div className='container-content'>
-				<Message>£{donationAmount} Could help answer an emergency call to our Animal Rescue Line</Message>
+				<Message>£{donationAmount} Could help {toggleState === 2 ? 'an Animal Rescue Team take on an urgent animal rescue' : 'answer an emergency call to our Animal Rescue Line'}</Message>
 			</div>
 
 			<div className='container-footer'>
-				<Hyperlink>Link</Hyperlink>
+				<Hyperlink>{toggleState === 2 ? `test` : `testTwo`}</Hyperlink>
 
 				<span>All Direct Debits are protected by the Direct Debit Guarantee.</span>
 
