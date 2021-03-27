@@ -10,16 +10,16 @@ const Input = props => {
 		name,
 		value,
 		size,
-		maxlength,
+		maxLength,
 		min,
 		max,
 		placeholder,
-		readonly = false,
+		readOnly = false,
 		disabled = false
 	} = props
 	
 	return (
-		<input {...{ type, className, id, name, value, size, maxlength, min, max, placeholder, readonly, disabled }} />
+		<input {...{ type, className, id, name, value, size, maxLength, min, max, placeholder, readOnly, disabled }} />
 	)
 }
 
@@ -30,10 +30,11 @@ Input.propTypes = {
 	name: PropTypes.string,
 	value: PropTypes.string,
 	size: PropTypes.string,
+	maxLength: PropTypes.string,
 	min: PropTypes.string,
 	max: PropTypes.string,
 	placeholder: PropTypes.string,
-	readonly: PropTypes.bool,
+	readOnly: PropTypes.bool,
 	disabled: PropTypes.bool
 }
 
