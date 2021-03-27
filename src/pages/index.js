@@ -12,7 +12,7 @@ const Home = () => (
 
 		<Image src='image1.jpg' height='140' width='140' alt='test alt text' loading='lazy' />
 
-		<Input />
+		<Input placeholder='Name' size="20" />
 
 		<Button className='test-btn'>£6</Button>
 		<Button>£12</Button>
