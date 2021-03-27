@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const Button = props => {
@@ -21,6 +22,15 @@ const Button = props => {
 	return (
 		<button {...{ type, onClick }} className={ buttonClass }>{ children }</button>
 	)
+}
+
+Button.propTypes = {
+	type: PropTypes.string,
+	className: PropTypes.string,
+	theme: PropTypes.string,
+	hasDropShadow: PropTypes.bool,
+	children: PropTypes.string,
+	onClick: PropTypes.func
 }
 
 export default Button
