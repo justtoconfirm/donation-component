@@ -14,6 +14,7 @@ const Input = props => {
 		min,
 		max,
 		placeholder,
+		onChange,
 		readOnly = false,
 		disabled = false
 	} = props
@@ -34,6 +35,7 @@ Input.propTypes = {
 	min: PropTypes.string,
 	max: PropTypes.string,
 	placeholder: PropTypes.string,
+	onChange: PropTypes.func,
 	readOnly: PropTypes.bool,
 	disabled: PropTypes.bool
 }
