@@ -10,11 +10,11 @@ const Donation = () => {
 	const [ toggleState, setToggleState ] = useState(1)
 	const [ donationAmount, setDonationAmount ] = useState(0)
 
-	const toggleTab = (index) => {
+	const toggleTab = index => {
 		setToggleState(index)
 	}
 
-	const setDonation = (amount) => {
+	const setDonation = amount => {
 		setDonationAmount(amount)
 	} 
 	
