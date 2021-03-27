@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/atoms/button/Button'
 import Hyperlink from '../components/atoms/hyperlink/Hyperlink'
+import Donation from '../components/molecules/donation/Donation'
 
 const Home = () => (
 	<>
@@ -15,6 +16,8 @@ const Home = () => (
 		<Button url='https://www.google.com'>Google</Button>
 
 		<Hyperlink href='https://www.hastingsdirect.com' target='_blank'>Test</Hyperlink>
+
+		<Donation />
 	</>
 )
 
