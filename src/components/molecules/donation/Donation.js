@@ -5,6 +5,8 @@ import Message from '../../atoms/message/Message'
 import Hyperlink from '../../atoms/hyperlink/Hyperlink'
 import Image from '../../atoms/image/Image'
 
+import './donation.scss'
+
 const Donation = () => {
 
 	const [ toggleState, setToggleState ] = useState(() => {

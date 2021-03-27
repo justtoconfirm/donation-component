@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
+import './hyperlink.scss'
+
 const Hyperlink = props => {
 
 	const {
