@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
+import './button.scss'
+
 const Button = props => {
 
 	const {
