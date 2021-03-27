@@ -30,10 +30,10 @@ body {
   padding: 15px;
   text-align: center;
   width: 50%;
-  background: white;
+  background: blue;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-  color: blue;
+  color: white;
   box-sizing: content-box;
   position: relative;
   outline: none;
@@ -43,8 +43,8 @@ body {
 }
 
 .active-tabs  {
-  background: blue;
-  color: white;
+  background: white;
+  color: blue;
   border-bottom: 1px solid transparent;
 }
 
