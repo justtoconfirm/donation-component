@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
@@ -23,7 +24,7 @@ const Button = props => {
 	const isLink = url && (url.includes('http') || url.startsWith('#') || url.startsWith('mailto') || url.startsWith('/'))
 
 	const renderLink = () =>
-		<a href={url} role='button' className={ buttonClass }>{ children }</a>
+		<Link to={url} role='button' className={ buttonClass }>{ children }</Link>
 
 	const renderButton = () =>
 		<button {...{ type, onClick }} className={ buttonClass }>{ children }</button>
