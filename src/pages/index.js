@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../components/atoms/button/Button'
+import Hyperlink from '../components/atoms/hyperlink/Hyperlink'
 
 const Home = () => (
 	<>
@@ -12,6 +13,8 @@ const Home = () => (
 		<Button>£30</Button>
 
 		<Button url='https://www.google.com'>Google</Button>
+
+		<Hyperlink href='https://www.hastingsdirect.com' target='_blank'>Test</Hyperlink>
 	</>
 )
 
