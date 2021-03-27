@@ -5,6 +5,8 @@ import Image from '../components/atoms/image/Image'
 import Input from '../components/atoms/input/Input'
 import Donation from '../components/molecules/donation/Donation'
 
+import '../index.scss'
+
 const Home = () => (
 	<>
 		<h1>Home</h1>
