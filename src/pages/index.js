@@ -21,7 +21,7 @@ const Home = () => (
 
 		<Button url='https://www.google.com'>Google</Button>
 
-		<Hyperlink href='https://www.hastingsdirect.com' target='_blank'>Test</Hyperlink>
+		<Hyperlink href='/about/' target='_blank'>About</Hyperlink>
 
 		<Donation />
 	</>

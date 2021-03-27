@@ -18,9 +18,17 @@ const Hyperlink = props => {
 		'a-link--primary' : theme === 'primary',
 		'a-link--secondary' : theme === 'secondary'
 	})
+
+	const isExternalLink = href && (href.includes('http') || href.startsWith('mailto'))
+
+	const renderExternalLink = () =>
+		<a href={ href } {...{ target, rel }} className={ hyperlinkClass }>{ children }</a>
+
+	const renderInternalLink = () =>
+		<Link to={ href } {...{ target, rel }} className={ hyperlinkClass }>{ children }</Link>
 	
 	return (
-		<Link to={ href } {...{ target, rel }} className={ hyperlinkClass }>{ children }</Link>
+		isExternalLink ? renderExternalLink() : renderInternalLink()
 	)
 }
 
