@@ -10,7 +10,7 @@ const Home = () => (
 		<h1>Home</h1>
 		<p>This is a test of the homepage.</p>
 
-		<Image />
+		<Image src='image1.jpg' height='140' width='140' alt='test alt text' loading='lazy' />
 
 		<Input />
 
