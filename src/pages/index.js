@@ -10,6 +10,8 @@ const Home = () => (
 		<Button>£12</Button>
 		<Button>£18</Button>
 		<Button>£30</Button>
+
+		<Button url='https://www.google.com'>Google</Button>
 	</>
 )
 
