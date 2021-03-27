@@ -49,7 +49,7 @@ const Donation = () => {
 			</div>
 
 			<div className='container-footer'>
-				<Hyperlink>{toggleState === 2 ? `test` : `testTwo`}</Hyperlink>
+				<Hyperlink>{toggleState === 2 ? `I would like to give monthly` : `I would like to make a one-off donation`}</Hyperlink>
 
 				<span>All Direct Debits are protected by the Direct Debit Guarantee.</span>
 
