@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../../atoms/button/Button'
 import Input from '../../atoms/input/Input'
+import Message from '../../atoms/message/Message'
 import Hyperlink from '../../atoms/hyperlink/Hyperlink'
 import Image from '../../atoms/image/Image'
 
@@ -38,7 +39,11 @@ const Donation = () => {
 				<Button>Donate £0 today</Button>
 			</div>
 
-			<div class='container-footer'>
+			<div className='container-content'>
+				<Message>£0 Could help answer an emergency call to our Animal Rescue Line</Message>
+			</div>
+
+			<div className='container-footer'>
 				<Hyperlink>Link</Hyperlink>
 
 				<Image src='image1.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
