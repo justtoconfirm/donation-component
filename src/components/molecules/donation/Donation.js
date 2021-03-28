@@ -13,16 +13,20 @@ const Donation = () => {
 		activeObject: null,
 		objects: [
 			{ 
-				id: 0
+				id: 0,
+				value: 10
 			}, 
 			{ 
-				id: 1 
+				id: 1,
+				value: 12 
 			}, 
 			{ 
-				id: 2 
+				id: 2,
+				value: 18
 			},
 			{
-				id: 3
+				id: 3,
+				value: 30
 			}
 		]
 	});
@@ -58,12 +62,6 @@ const Donation = () => {
 	return (
 		<div className='m-donations'>
 
-			<div className='app'>
-				{appState.objects.map((elements, index) => (
-					<Button key={index} className={toggleActiveStyles(index)} onClick={() => {toggleActive(index)}}>TEST</Button>
-				))}
-			</div>
-
 			<div className='m-donations__tabs-container'>
 				<button className={toggleState === 1 ? 'm-donations__tab m-donations__tab--active' : 'm-donations__tab'} onClick={() => toggleTab(1)}>Donate monthly</button>
 				<button className={toggleState === 2 ? 'm-donations__tab m-donations__tab--active' : 'm-donations__tab'} onClick={() => toggleTab(2)}>Donate once</button>
@@ -77,11 +75,12 @@ const Donation = () => {
 					
 					<div className='m-donations__form-group'>
 
-						<Button onClick={() => setDonation(10)}>£10</Button>
-						<Button onClick={() => setDonation(40)}>£40</Button>
-						<Button onClick={() => setDonation(75)}>£75</Button>
-						<Button onClick={() => setDonation(100)}>£100</Button>
+						{appState.objects.map((elements, index) => (
+							<Button key={index} className={toggleActiveStyles(index)} onClick={() => {toggleActive(index); setDonation(elements.value)}}>£{elements.value}</Button>
+						))}
+
 						<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
+						
 						<Button theme='secondary'>Donate £{donationAmount} monthly</Button>
 					</div>
 				
@@ -90,11 +89,13 @@ const Donation = () => {
 				<div className={toggleState === 2 ? 'm-donations__content m-donations__content--active' : 'm-donations__content'}>
 					
 					<div className='m-donations__form-group'>
-						<Button onClick={() => setDonation(10)}>£10</Button>
-						<Button onClick={() => setDonation(40)}>£40</Button>
-						<Button onClick={() => setDonation(75)}>£75</Button>
-						<Button onClick={() => setDonation(100)}>£100</Button>
+
+						{appState.objects.map((elements, index) => (
+							<Button key={index} className={toggleActiveStyles(index)} onClick={() => {toggleActive(index); setDonation(elements.value)}}>£{elements.value}</Button>
+						))}
+						
 						<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
+						
 						<Button theme='secondary'>Donate £{donationAmount} today</Button>
 					</div>
 				
