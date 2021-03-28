@@ -11,7 +11,9 @@ const Message = props => {
 	} = props
 	
 	return (
-		<div {...{ className }}>{ children }</div>
+		<>
+			<div {...{ className }}>{ children }</div>
+		</>
 	)
 }
 
