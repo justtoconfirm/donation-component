@@ -1,0 +1,2 @@
+(self.webpackChunkdonation_component=self.webpackChunkdonation_component||[]).push([[883],{9616:function(n,e,t){"use strict";t.r(e);var o=t(7294);e.default=function(){return o.createElement("p",null,"Error 404 page")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-0184ea8c34a12316a10d.js.map
