@@ -12,7 +12,10 @@ const Message = props => {
 	
 	return (
 		<>
-			<div {...{ className }}>{ children }</div>
+			<div className='a-message-container'>
+				<div className='a-message-arrow'></div>
+				<div {...{ className }}>{ children }</div>
+			</div>
 		</>
 	)
 }
