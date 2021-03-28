@@ -2,6 +2,8 @@
 
 A reusable Donation Component built in React and using the Gatsby framework.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dfbb2d57-7e42-493f-b1d1-9b12069a9b8f/deploy-status)](https://app.netlify.com/sites/youthful-babbage-4e3ae7/deploys)
+
 ## Install
 
 Begin by cloning the repository from GitHub. Git is required to be installed.
