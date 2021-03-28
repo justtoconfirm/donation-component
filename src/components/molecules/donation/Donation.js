@@ -82,7 +82,7 @@ const Donation = () => {
 
 							<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
 								
-							<Button theme='secondary'>Donate £{donationAmount} monthly</Button>
+							<Button theme='secondary' hasDropShadow>Donate £{donationAmount} monthly</Button>
 						</div>
 					
 					</div>
@@ -97,7 +97,7 @@ const Donation = () => {
 								
 							<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
 
-							<Button theme='secondary'>Donate £{donationAmount} today</Button>
+							<Button theme='secondary' hasDropShadow>Donate £{donationAmount} today</Button>
 
 						</div>
 					

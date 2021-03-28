@@ -9,15 +9,31 @@
 	line-height: 22px;
 	font-size: 20px;
 
+	&:hover {
+		background-color: darken(#EAEDF4, 20%);
+	}
+
+	&--shadow {
+		box-shadow: 0 4px rgba(0,0,0,0.19);
+	}
+
 	&--active {
 		background-color: #189CA1;
 		border: 1px solid #189CA1;
 		color: #fff;
+
+		&:hover {
+			background-color: #189CA1;
+		}
 	}
 
 	&--secondary {
 		background-color: #F69220;
 		border: 1px solid #F69220;
+
+		&:hover {
+			background-color: lighten(#F69220, 20%);
+		}
 	}
 }
 
