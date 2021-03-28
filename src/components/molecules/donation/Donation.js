@@ -107,12 +107,20 @@ const Donation = () => {
 				</div>
 
 				<div className='m-donations__footer'>
-					<Hyperlink className='m-donations__footer-link'>{toggleState === 2 ? `I would like to give monthly` : `I would like to make a one-off donation`}</Hyperlink>
+					<div className='flex-row'>
+						<div className='flex-column'>
+							<Hyperlink className='m-donations__footer-link'>{toggleState === 2 ? `I would like to give monthly` : `I would like to make a one-off donation`}</Hyperlink>
+						</div>
 
-					<span className={toggleState === 2 ? 'm-donations__footer-text m-donations__footer-text--hidden' : 'm-donations__footer-text'}>All Direct Debits are protected by the Direct Debit Guarantee.</span>
+						<div className='flex-column flex-column--right'>
+							<span className={toggleState === 2 ? 'm-donations__footer-text m-donations__footer-text--hidden' : 'm-donations__footer-text'}>All Direct Debits are protected by the Direct Debit Guarantee.</span>
+						</div>
 
-					<Image src='image1.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
-					<Image src='image2.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
+						<div className='flex-column flex-column--right'>
+							<Image src='image1.jpg' height='20' width='20' alt='' loading='lazy' />
+							<Image src='image2.jpg' height='20' width='20' alt='' loading='lazy' />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

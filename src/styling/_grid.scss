@@ -3,4 +3,32 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+
+	&-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	&-column {
+		flex-basis: 100%;
+		flex-grow: 1;
+
+		&--right {
+			text-align: right;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.flex-column {
+		flex: 1;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.flex-column {
+		text-align: center;
+		margin: 10px 0;
+	}
 }
