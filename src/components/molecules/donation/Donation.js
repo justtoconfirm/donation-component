@@ -69,7 +69,7 @@ const Donation = () => {
 			
 			<div className='m-donations__inner'>
 
-				<p>I would like to make a {toggleState === 2 ? 'one-off' : 'monthly'} donation of</p>
+				<p>I would like to make a {toggleState === 2 ? `one-off` : `monthly`} donation of</p>
 
 				<div className={toggleState === 1 ? 'm-donations__content m-donations__content--active' : 'm-donations__content'}>
 					
@@ -101,7 +101,7 @@ const Donation = () => {
 				
 				</div>
 
-				<Message>£{donationAmount} Could help {toggleState === 2 ? 'an Animal Rescue Team take on an urgent animal rescue' : 'answer an emergency call to our Animal Rescue Line'}</Message>
+				<Message>£{donationAmount} Could help {toggleState === 2 ? `an Animal Rescue Team take on an urgent animal rescue` : `answer an emergency call to our Animal Rescue Line`}</Message>
 			</div>
 
 			<div className='m-donations__footer'>
