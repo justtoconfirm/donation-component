@@ -117,8 +117,14 @@ const Donation = () => {
 						</div>
 
 						<div className='flex-column flex-column--right'>
-							<Image src='image1.jpg' height='20' width='20' alt='' loading='lazy' />
-							<Image src='image2.jpg' height='20' width='20' alt='' loading='lazy' />
+							<div className={toggleState === 1 ? 'm-donations__footer-images--hidden' : ''}>
+								<Image src='image1.jpg' height='20' width='20' alt='' loading='lazy' />
+								<Image src='image2.jpg' height='20' width='20' alt='' loading='lazy' />
+							</div>
+							<div className={toggleState === 2 ? 'm-donations__footer-images--hidden' : ''}>
+								<Image src='image3.jpg' height='20' width='20' alt='' loading='lazy' />
+								<Image src='image4.jpg' height='20' width='20' alt='' loading='lazy' />
+							</div>
 						</div>
 					</div>
 				</div>

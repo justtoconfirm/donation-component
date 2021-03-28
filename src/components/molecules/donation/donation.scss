@@ -103,5 +103,11 @@
                 display: none;
             }
         }
+
+        &-images {
+            &--hidden {
+                display: none;
+            }
+        }
     }
 }
