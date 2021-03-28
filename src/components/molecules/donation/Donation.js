@@ -43,7 +43,7 @@ const Donation = () => {
 						<Button onClick={() => setDonation(75)}>£75</Button>
 						<Button onClick={() => setDonation(100)}>£100</Button>
 						<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
-						<Button>Donate £{donationAmount} monthly</Button>
+						<Button theme='secondary'>Donate £{donationAmount} monthly</Button>
 					</div>
 				
 				</div>
@@ -56,7 +56,7 @@ const Donation = () => {
 						<Button onClick={() => setDonation(75)}>£75</Button>
 						<Button onClick={() => setDonation(100)}>£100</Button>
 						<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
-						<Button>Donate £{donationAmount} today</Button>
+						<Button theme='secondary'>Donate £{donationAmount} today</Button>
 					</div>
 				
 				</div>

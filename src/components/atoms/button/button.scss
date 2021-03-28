@@ -1,3 +1,19 @@
 .a-btn {
-	//background-color: blue;
+	background-color: #EAEDF4;
+	border: 1px solid #80848D;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 15px 35px;
+
+	&--active {
+		background-color: #189CA1;
+		border: 1px solid #189CA1;
+		color: #fff;
+	}
+
+	&--secondary {
+		background-color: #F69220;
+		border: 1px solid #F69220;
+	}
 }
