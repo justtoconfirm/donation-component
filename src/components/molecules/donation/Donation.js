@@ -48,7 +48,7 @@ const Donation = () => {
 	})
 
 	const [ donationAmount, setDonationAmount ] = useState(() => {
-		return 40
+		return 12
 	})
 
 	const toggleTab = index => {
