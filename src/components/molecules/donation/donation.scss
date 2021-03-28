@@ -2,8 +2,14 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 800px;   // Temporary
+    width: 1000px;   // Temporary
     margin: 100px auto 0;   // Temporary - centres the panel on screen
+
+    p {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
 
     &__tabs-container {
         display: flex;
@@ -13,7 +19,11 @@
     }
 
     &__tab {
-        padding: 15px;
+        padding: 15px 40px;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 22px;
+        font-weight: bold;
         text-align: center;
         background-color: #003473;
         color: #fff; 
@@ -42,7 +52,7 @@
         border-top: 1px solid #B2B8C5;
         border-left: 1px solid #B2B8C5;
         border-right: 1px solid #B2B8C5;
-        padding: 20px 15px;
+        padding: 20px 40px;
     }
 
     &__content {
@@ -61,9 +71,27 @@
 
     &__footer {
         background-color: #eaedf4;
-        padding: 35px 15px;
+        padding: 35px 40px;
         border-bottom: 1px solid #B2B8C5;
         border-left: 1px solid #B2B8C5;
         border-right: 1px solid #B2B8C5;
+
+        &-link {
+            color: #1F2526;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 0;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &-text {
+            font-size: 12px;
+            line-height: 18px;
+            color: #4C4E53;
+            letter-spacing: 0;
+        }
     }
 }

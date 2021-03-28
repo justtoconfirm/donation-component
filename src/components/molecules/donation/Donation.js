@@ -105,11 +105,12 @@ const Donation = () => {
 			</div>
 
 			<div className='m-donations__footer'>
-				<Hyperlink>{toggleState === 2 ? `I would like to give monthly` : `I would like to make a one-off donation`}</Hyperlink>
+				<Hyperlink className='m-donations__footer-link'>{toggleState === 2 ? `I would like to give monthly` : `I would like to make a one-off donation`}</Hyperlink>
 
-				<span>All Direct Debits are protected by the Direct Debit Guarantee.</span>
+				<span className='m-donations__footer-text'>All Direct Debits are protected by the Direct Debit Guarantee.</span>
 
 				<Image src='image1.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
+				<Image src='image2.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
 			</div>
 		</div>
 	)
