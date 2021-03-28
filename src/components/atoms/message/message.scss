@@ -1,3 +1,11 @@
-.a-message {
+$message-color: #F69220;
 
+.a-message {
+	background-color: lighten($message-color, 20%);
+	color: #1F2526;
+	margin-top: 25px;
+	margin-bottom: 5px;
+	padding: 20px;
+	font-size: 18px;
+	line-height: 22px;
 }
