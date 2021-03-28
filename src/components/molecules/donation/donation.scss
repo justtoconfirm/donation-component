@@ -32,6 +32,10 @@
         margin-right: 5px;
         border: none;
 
+        &:hover {
+            background-color: lighten(#003473, 10%);
+        }
+
         &--active {
             background-color: #fff;
             color: #003473;
@@ -39,6 +43,10 @@
             border-left: 1px solid #B2B8C5;
             border-right: 1px solid #B2B8C5;
             border-bottom: 1px solid transparent;
+
+            &:hover {
+                background-color: #fff;
+            }
         }
 
         &:not(:last-child) {
