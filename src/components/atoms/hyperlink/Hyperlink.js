@@ -13,8 +13,7 @@ const Hyperlink = props => {
 		theme = '',
 		target,
 		rel,
-		children,
-		onClick
+		children
 	} = props
 
 	const hyperlinkClass = classNames('a-link', className, {
@@ -25,10 +24,10 @@ const Hyperlink = props => {
 	const isExternalLink = href && (href.includes('http') || href.startsWith('mailto'))
 
 	const renderExternalLink = () =>
-		<a href={ href } {...{ target, rel, onClick }} className={ hyperlinkClass }>{ children }</a>
+		<a href={ href } {...{ target, rel }} className={ hyperlinkClass }>{ children }</a>
 
 	const renderInternalLink = () =>
-		<Link to={ href } {...{ target, rel, onClick }} className={ hyperlinkClass }>{ children }</Link>
+		<Link to={ href } {...{ target, rel }} className={ hyperlinkClass }>{ children }</Link>
 	
 	return (
 		isExternalLink ? renderExternalLink() : renderInternalLink()
@@ -42,7 +41,6 @@ Hyperlink.propTypes = {
 	target: PropTypes.string,
 	rel: PropTypes.string,
 	children: PropTypes.string,
-	onClick: PropTypes.func
 }
 
 export default Hyperlink

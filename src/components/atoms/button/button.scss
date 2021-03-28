@@ -20,3 +20,12 @@
 		border: 1px solid #F69220;
 	}
 }
+
+@media (max-width: 1024px) {
+	.a-btn {
+		&--secondary {
+			margin-top: 15px;
+			width: 100%;
+		}
+	}
+}

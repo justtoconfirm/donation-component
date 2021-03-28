@@ -90,6 +90,10 @@
             line-height: 18px;
             color: #4C4E53;
             letter-spacing: 0;
+
+            &--hidden {
+                display: none;
+            }
         }
     }
 }

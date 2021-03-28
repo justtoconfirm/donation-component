@@ -5,7 +5,12 @@ import '../styling/index.scss'
 
 const Home = () => (
 	<>
-		<Donation />
+		<main role="main">
+
+			<div class="g-container">
+				<Donation />
+			</div>
+		</main>
 	</>
 )
 
