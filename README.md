@@ -36,3 +36,9 @@ $ npm run start
 ```
 
 The application will run on port 8000: http://localhost:8000/
+
+## Production Deployment
+
+The build will be triggered each time a commit is made to the main branch in GitHub. This will run the build command to generate the production code and deploy to Netlify to host.
+
+https://youthful-babbage-4e3ae7.netlify.app
