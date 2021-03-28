@@ -9,6 +9,7 @@ const Button = props => {
 
 	const {
 		type = 'button',
+		key,
 		url = '',
 		className = '',
 		theme = '',
@@ -29,7 +30,7 @@ const Button = props => {
 		<Link to={url} role='button' className={ buttonClass }>{ children }</Link>
 
 	const renderButton = () =>
-		<button {...{ type, onClick }} className={ buttonClass }>{ children }</button>
+		<button {...{ type, key, onClick }} className={ buttonClass }>{ children }</button>
 
 	return (
 		isLink ? renderLink() : renderButton()
@@ -38,6 +39,7 @@ const Button = props => {
 
 Button.propTypes = {
 	type: PropTypes.string,
+	key: PropTypes.int,
 	url: PropTypes.string,
 	className: PropTypes.string,
 	theme: PropTypes.string,

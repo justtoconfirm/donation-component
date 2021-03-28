@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://donation-component/./src/pages/404.js"],"names":[],"mappings":"gJAWA,UAPc,WAEb,OACC","file":"component---src-pages-404-js-735290fbcdcd3713f3da.js","sourcesContent":["import React from 'react'\n\nimport '../styling/index.scss'\n\nconst Error = () => {\n\t\n\treturn (\n\t\t<p>Error 404 page</p>\n\t)\n}\n\nexport default Error"],"sourceRoot":""}

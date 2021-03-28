@@ -9,6 +9,36 @@ import './donation.scss'
 
 const Donation = () => {
 
+	const [ appState, changeState ] = useState({
+		activeObject: null,
+		objects: [
+			{ 
+				id: 0
+			}, 
+			{ 
+				id: 1 
+			}, 
+			{ 
+				id: 2 
+			},
+			{
+				id: 3
+			}
+		]
+	});
+
+	const toggleActive = index => {
+		changeState({ ...appState, activeObject: appState.objects[index] });
+	}
+
+	const toggleActiveStyles = index => {
+		if (appState.objects[index] === appState.activeObject) {
+			return 'a-btn--active';
+		} else {
+			return ''
+		}
+	}
+
 	const [ toggleState, setToggleState ] = useState(() => {
 		return 1
 	})
@@ -27,10 +57,18 @@ const Donation = () => {
 	
 	return (
 		<div className='m-donations'>
+
+			<div className='app'>
+				{appState.objects.map((elements, index) => (
+					<Button key={index} className={toggleActiveStyles(index)} onClick={() => {toggleActive(index)}}>TEST</Button>
+				))}
+			</div>
+
 			<div className='m-donations__tabs-container'>
 				<button className={toggleState === 1 ? 'm-donations__tab m-donations__tab--active' : 'm-donations__tab'} onClick={() => toggleTab(1)}>Donate monthly</button>
 				<button className={toggleState === 2 ? 'm-donations__tab m-donations__tab--active' : 'm-donations__tab'} onClick={() => toggleTab(2)}>Donate once</button>
 			</div>
+			
 			<div className='m-donations__inner'>
 
 				<p>I would like to make a {toggleState === 2 ? 'one-off' : 'monthly'} donation of</p>
@@ -38,6 +76,7 @@ const Donation = () => {
 				<div className={toggleState === 1 ? 'm-donations__content m-donations__content--active' : 'm-donations__content'}>
 					
 					<div className='m-donations__form-group'>
+
 						<Button onClick={() => setDonation(10)}>£10</Button>
 						<Button onClick={() => setDonation(40)}>£40</Button>
 						<Button onClick={() => setDonation(75)}>£75</Button>
