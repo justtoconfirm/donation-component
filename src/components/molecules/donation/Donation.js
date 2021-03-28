@@ -26,16 +26,16 @@ const Donation = () => {
 	} 
 	
 	return (
-		<div className='container'>
-			<div className='bloc-tabs'>
-				<button className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(1)}>Donate monthly</button>
-				<button className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(2)}>Donate once</button>
+		<div className='m-donations'>
+			<div className='m-donations__tabs-container'>
+				<button className={toggleState === 1 ? 'm-donations__tab m-donations__tab--active' : 'm-donations__tab'} onClick={() => toggleTab(1)}>Donate monthly</button>
+				<button className={toggleState === 2 ? 'm-donations__tab m-donations__tab--active' : 'm-donations__tab'} onClick={() => toggleTab(2)}>Donate once</button>
 			</div>
-			<div className='test'>
+			<div className='m-donations__inner'>
 
 				<p>I would like to make a {toggleState === 2 ? 'one-off' : 'monthly'} donation of</p>
 
-				<div className={toggleState === 1 ? 'content active-content' : 'content'}>
+				<div className={toggleState === 1 ? 'm-donations__content m-donations__content--active' : 'm-donations__content'}>
 					
 					<Button onClick={() => setDonation(10)}>£10</Button>
 					<Button onClick={() => setDonation(40)}>£40</Button>
@@ -46,7 +46,7 @@ const Donation = () => {
 				
 				</div>
 
-				<div className={toggleState === 2 ? 'content active-content' : 'content'}>
+				<div className={toggleState === 2 ? 'm-donations__content m-donations__content--active' : 'm-donations__content'}>
 					
 					<Button onClick={() => setDonation(10)}>£10</Button>
 					<Button onClick={() => setDonation(40)}>£40</Button>

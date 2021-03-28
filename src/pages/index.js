@@ -1,7 +1,7 @@
 import React from 'react'
 import Donation from '../components/molecules/donation/Donation'
 
-import '../index.scss'
+import '../styling/index.scss'
 
 const Home = () => (
 	<>
