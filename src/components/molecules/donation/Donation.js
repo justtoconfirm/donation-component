@@ -37,35 +37,39 @@ const Donation = () => {
 
 				<div className={toggleState === 1 ? 'm-donations__content m-donations__content--active' : 'm-donations__content'}>
 					
-					<Button onClick={() => setDonation(10)}>£10</Button>
-					<Button onClick={() => setDonation(40)}>£40</Button>
-					<Button onClick={() => setDonation(75)}>£75</Button>
-					<Button onClick={() => setDonation(100)}>£100</Button>
-					<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
-					<Button>Donate £{donationAmount} monthly</Button>
+					<div className='m-donations__form-group'>
+						<Button onClick={() => setDonation(10)}>£10</Button>
+						<Button onClick={() => setDonation(40)}>£40</Button>
+						<Button onClick={() => setDonation(75)}>£75</Button>
+						<Button onClick={() => setDonation(100)}>£100</Button>
+						<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
+						<Button>Donate £{donationAmount} monthly</Button>
+					</div>
 				
 				</div>
 
 				<div className={toggleState === 2 ? 'm-donations__content m-donations__content--active' : 'm-donations__content'}>
 					
-					<Button onClick={() => setDonation(10)}>£10</Button>
-					<Button onClick={() => setDonation(40)}>£40</Button>
-					<Button onClick={() => setDonation(75)}>£75</Button>
-					<Button onClick={() => setDonation(100)}>£100</Button>
-					<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
-					<Button>Donate £{donationAmount} today</Button>
+					<div className='m-donations__form-group'>
+						<Button onClick={() => setDonation(10)}>£10</Button>
+						<Button onClick={() => setDonation(40)}>£40</Button>
+						<Button onClick={() => setDonation(75)}>£75</Button>
+						<Button onClick={() => setDonation(100)}>£100</Button>
+						<Input type='number' placeholder='Other amount' onChange={event => setDonation(event.target.value)} />
+						<Button>Donate £{donationAmount} today</Button>
+					</div>
 				
 				</div>
 
 				<Message>£{donationAmount} Could help {toggleState === 2 ? 'an Animal Rescue Team take on an urgent animal rescue' : 'answer an emergency call to our Animal Rescue Line'}</Message>
+			</div>
 
-				<div className='container-footer'>
-					<Hyperlink>{toggleState === 2 ? `I would like to give monthly` : `I would like to make a one-off donation`}</Hyperlink>
+			<div className='m-donations__footer'>
+				<Hyperlink>{toggleState === 2 ? `I would like to give monthly` : `I would like to make a one-off donation`}</Hyperlink>
 
-					<span>All Direct Debits are protected by the Direct Debit Guarantee.</span>
+				<span>All Direct Debits are protected by the Direct Debit Guarantee.</span>
 
-					<Image src='image1.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
-				</div>
+				<Image src='image1.jpg' height='20' width='20' alt='test alt text' loading='lazy' />
 			</div>
 		</div>
 	)
